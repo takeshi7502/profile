@@ -277,7 +277,7 @@ h3.hello{
     margin: 15px 0;
 }
 h3.hello span{
-    font-family: 'Clicker Script', cursive;
+    font-family: 'aria', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
@@ -594,7 +594,8 @@ h3.my-profession{
 .contact .contact-info-item .icon{
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa{
+.contact .contact-info-item .icon .fa-solid,
+.contact .contact-info-item .icon .fa-brands{
     font-size: 25px;
     color: var(--skin-color);
 }
