@@ -396,6 +396,9 @@ h3.my-profession{
     color: var(--text-black-900);
     text-transform: capitalize;
 }
+.cre-source h5{
+    line-height: 25px !important;
+}
 .about .about-content .skills .skill-item .progress{
     height: 7px;
     background: var(--bg-black-50);
@@ -404,7 +407,7 @@ h3.my-profession{
     position: relative;
 }
 .about .about-content .skills .skill-item{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 .about .about-content .skills .skill-item .progress-in{
     position: absolute;
@@ -509,6 +512,9 @@ h3.my-profession{
     text-align: center;
     transition: all 0.3S ease;
 }
+.service .service-item .service-item-inner p{
+    text-align: left;
+}
 .service .service-item .service-item-inner:hover{
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
@@ -521,7 +527,8 @@ h3.my-profession{
     text-align: center;
     transition: all 0.3s ease;
 }
-.service .service-item .service-item-inner .icon .fa{
+.service .service-item .service-item-inner .icon .fa-solid,
+.service .service-item .service-item-inner .icon .fa-brands {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
@@ -530,7 +537,8 @@ h3.my-profession{
 .service .service-item .service-item-inner:hover .icon{
     background: var(--skin-color);
 }
-.service .service-item .service-item-inner:hover .icon .fa{
+.service .service-item .service-item-inner:hover .icon .fa-solid,
+.service .service-item .service-item-inner:hover .icon .fa-brands {
     font-size: 25px;
     color: #ffffff;
 }
@@ -577,7 +585,7 @@ h3.my-profession{
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .contact-sub-title{
     color: var(--text-black-900);
