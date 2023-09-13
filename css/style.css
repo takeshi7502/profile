@@ -290,6 +290,7 @@ h3.my-profession{
     color: var(--skin-color);
 }
 .home-info p{
+    margin-top: 15px;
     margin-bottom: 70px;
     font-size: 30px;
     color: var(--text-black-700);
