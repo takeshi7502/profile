@@ -721,7 +721,7 @@ h3.my-profession{
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item{
-        flex: 0 0 50%;
+        flex: 0 0 20%;
         max-width: 50%;
     }
     .home .home-info{
