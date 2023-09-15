@@ -34,6 +34,7 @@
                 <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>Thông Tin</a></li>
                 <li><a href="#services"><i class="fa fa-list"></i>Dịch Vụ</a></li>
+                <!-- <li><a href="#akebi"><img src="https://i.upanh.org/2023/07/03/akebi_icon_korau79ea8810ae7941d3.png" style="width: 20px;height:20px;margin-right:11px;">Akebi</a></li> -->
                 <li><a href="#portfolio"><i class="fa fa-files"></i>File Teleport</a></li>
                 <li><a href="#contact"><i class="fa fa-message-text"></i>Liên Hệ</a></li>
             </ul>
@@ -155,6 +156,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- Dịch Vụ -->
             <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
@@ -210,7 +213,34 @@
                     </div>
                 </div>
             </section>
+            <!-- End Dịch Vụ -->
 
+            <!-- Akebi -->
+            <!-- <section class="service section" id="akebi">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Dịch Vụ - Tài Nguyên</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <a href="https://discord.gg/eGkwfAQKMF" target="_blank">
+                                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                    </a>
+                                </div>
+                                <h4>Bán Key Tool Genshin</h4>
+                                <p>Mình bán key tool Genshin: <a href="https://discord.gg/akebi" target="_blank"><b>AKEBI</b></a>, tool hỗ trợ bao xịn xò, ai muốn mua thì qua <a href="https://discord.gg/eGkwfAQKMF" target="_blank"><b>Discord Server Takeshi</b></a> xem giá nhé.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- End Akebi -->
+
+            <!-- File Teleport -->
             <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
@@ -927,6 +957,7 @@
                     </div>
                 </div>
             </section>
+            <!-- End File Teleport -->
 
             <section class="contact section" id="contact">
                 <div class="container">
@@ -984,53 +1015,6 @@
                             <p>Takeshi</p>
                         </div>
                     </div>
-                    <!-- <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                    <h4 class="contact-sub-title padd-15">I'm VIEW REPOSIVE TO MESSAGE</h4>
-                    <div class="row">
-                        <div class="contact-form padd-15">
-                            <form id="form" method="post" onSubmit="return false;">
-                                <div class="row">
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name">
-                                        </div>
-                                    </div>
-                                    <div class="form-item col-6 padd-15">
-                                        <div class="form-group">
-                                            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <input type="text" name="tieude" id="tieude" class="form-control" placeholder="Suject">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <textarea name="content" class="form-control" id="content" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                        <div class="form-group">
-                                            <div id="recaptcha" class="g-recaptcha" data-sitekey="6LcD0v4cAAAAAJHsinawIRsAphqNMUJ4b0RwWg3R"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="form-item col-12 padd-15">
-                                            <button type="submit" id="submit" name="submit" class="btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                            <div id="notice"></div>
-                        </div>
-                    </div> -->
                 </div>
             </section>
         </div>
@@ -1083,60 +1067,8 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-        $(document).ready(function() {
-        $("#submit").click(function() {
-            $("#submit").addClass('disabled');
-            $("#notice").hide();
-            $("#submit").prop('disabled',false).html("<i class=\"fa fa-spinner fa-spin\"></i> Đang Gửi...");
-            getLink();
-        });
-        $("#reset").click(function() {
-            $("#notice").html('');
-        });
-
-        function getLink() {
-            var form = $('#form')[0];
-            var formData = new FormData(form);
-            $.ajax({
-                url: "send.php",
-                type: "POST",
-                data: formData,
-                contentType: false,
-                cache: false,
-                processData: false,
-                success: function(rs) {
-                    res = JSON.parse(rs);
-                    if (res.success) {
-                        $("#submit").removeClass('disabled');
-                        $("#notice").hide();
-                        Swal.fire("",res.success,"success");
-                        $("#submit").prop('disabled',false).html(" Send Message");
-                    } else if (res.error) {
-                        $("#submit").removeClass('disabled');
-                        $("#notice").hide();
-                        Swal.fire("Lỗi",res.error,"error");
-                         $("#submit").prop('disabled',false).html(" Send Message");
-                    } else {
-                        $("#submit").removeClass('disabled');
-                        $("#notice").hide();
-                        Swal.fire("Lỗi","Có lỗi hệ thống, vui lòng kiểm tra lại!","error");
-                        $("#submit").prop('disabled',false).html(" Send Message");
-                    }
-                },
-                error: function() {
-                    $("#submit").removeClass('disabled');
-                    $("#notice").hide();
-                    Swal.fire("Lỗi","Có lỗi hệ thống, vui lòng kiểm tra lại!","error");
-                    $("#submit").prop('disabled',false).html(" Send Message");
-                }
-            });
-        }
-    });
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script src="/js/style-switcher.js"></script>
     <script src="/js/script.js"></script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 </body>
 </html>
