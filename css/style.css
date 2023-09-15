@@ -741,7 +741,7 @@ h3.my-profession{
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info{
-        flex: 0 0 100%;
+        flex: 0 0 20%;
         max-width: 100%;
     }
 }
