@@ -571,7 +571,7 @@ h3.my-profession{
 }
 .portfolio .portfolio-heading h2,h3{
     color: var(--text-black-900);
-    font-weight: 500;
+    /* font-weight: 500; */
 }
 .portfolio .portfolio-item{
     flex: 0 0 8.3%;
@@ -741,6 +741,10 @@ h3.my-profession{
     .about .about-content .education,
     .about .about-content .skills,
     .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio .portfolio-item{
         flex: 0 0 20%;
         max-width: 100%;
     }
