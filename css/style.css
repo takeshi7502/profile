@@ -555,10 +555,10 @@ h3.my-profession{
     color: var(--text-black-700);
     line-height: 25px;
 }
-.portfolio .container{
+.telejson .container{
     padding-bottom: 40px;
 }
-.portfolio .portfolio-heading{
+.telejson .telejson-heading{
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
@@ -569,11 +569,11 @@ h3.my-profession{
     width: 300px;
     padding: 0 8px;
 }
-.portfolio .portfolio-heading h2,h3{
+.telejson .telejson-heading h2,h3{
     color: var(--text-black-900);
     /* font-weight: 500; */
 }
-.portfolio .portfolio-item{
+.telejson .telejson-item{
     flex: 0 0 8.3%;
     max-width: 33.33%;
     margin-bottom: 30px;
@@ -582,23 +582,23 @@ h3.my-profession{
 
 .overflow-auto{
     width: 100%;
-    height: 325px;
+    height: 285px;
     overflow: auto;
     overflow-x: hidden;
     border: 1px solid #000;
     padding: 5px 10px;
 }
 
-.portfolio .portfolio-item h4{
+.telejson .telejson-item h4{
     text-align: center;
 }
-.portfolio .portfolio-item-inner{
+.telejson .telejson-item-inner{
     border: 6px solid var(--bg-black-100);
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px;
 }
-.portfolio .portfolio-item-inner .portfolio-img img{
+.telejson .telejson-item-inner .telejson-img img{
     width: 100%;
     display: block;
     background-color: #747474;
@@ -719,7 +719,7 @@ h3.my-profession{
 }
 @media (max-width:991px){
     .contact .contact-info-item,
-    .portfolio .portfolio-item,
+    .telejson .telejson-item,
     .service .service-item{
         flex: 0 0 20%;
         max-width: 50%;
@@ -735,7 +735,7 @@ h3.my-profession{
 @media (max-width:767px){
     .contact .contact-form .col-6,
     .contact .contact-info-item,
-    .portfolio .portfolio-item,
+    .telejson .telejson-item,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
@@ -744,7 +744,7 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .portfolio .portfolio-item{
+    .telejson .telejson-item{
         flex: 0 0 20%;
         max-width: 100%;
     }
