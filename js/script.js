@@ -73,3 +73,25 @@ const nav = document.querySelector(".nav"),
                 allSection[i].classList.toggle("open");
             }
         }
+
+// JavaScript để thay đổi tốc độ cuộn
+var marquee = document.getElementById("myMarquee");
+var speed = 1; // Tốc độ cuộn (pixels/giây)
+
+marquee.onmouseover = function() {
+  speed = 0; // Tạm dừng marquee khi di chuột qua
+};
+
+marquee.onmouseout = function() {
+  speed = 1; // Khôi phục tốc độ khi di chuột ra khỏi marquee
+};
+
+function moveMarquee() {
+  marquee.scrollLeft += speed;
+  if (marquee.scrollLeft >= marquee.scrollWidth - marquee.clientWidth) {
+    marquee.scrollLeft = 0;
+  }
+  requestAnimationFrame(moveMarquee);
+}
+
+moveMarquee(); // Bắt đầu cuộn marquee
