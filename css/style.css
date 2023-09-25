@@ -549,6 +549,11 @@ h3.my-profession{
     text-align: center;
     transition: all 0.3s ease;
 }
+.service .service-item .service-item-inner .iconnf img{
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
 .service .service-item .service-item-inner .icon .fa-solid,
 .service .service-item .service-item-inner .icon .fa-brands {
     font-size: 40px;
