@@ -718,6 +718,9 @@ h3.my-profession{
     height: 50px;
     padding: 0 50px;
 }
+#audio-player {
+    display: none; /* Ẩn trình phát âm thanh */
+  }
 @media (max-width:1199px){
     .section .container{
         padding-top: 70px;
