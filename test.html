@@ -6,7 +6,7 @@
   <title>Trang Web với Nhạc Nền</title>
   <style>
     body {
-      background-image: url('duong-dan-hinh-nen.jpg'); /* Đường dẫn đến hình nền */
+      background-image: url('duong-dan-hinh-nen.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -16,28 +16,25 @@
     }
 
     #audio-player {
-        display: none;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 10px;
-      text-align: center;
-    }
-
-    audio {
-      width: 100%;
+      display: none;
     }
   </style>
+  <script>
+    function playAudio() {
+      var audio = document.getElementById('background-audio');
+      audio.volume = 0.3; // Thiết lập âm lượng nếu cần
+      audio.play();
+    }
+  </script>
 </head>
-<body>
+<body onclick="playAudio()">
 
   <div id="audio-player">
-    <audio controls autoplay loop>
-      <source src="./audio/kobasolo.mp3" type="audio/mp3">
+    <audio id="background-audio" loop>
+      <source src="audio/kobasolo.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
-  </div>
+  </div>x
 
   <h1>Chào mừng đến trang web có nhạc nền!</h1>
   <p>Đây là nội dung trang web của bạn.</p>
