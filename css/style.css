@@ -296,6 +296,9 @@ aside .nav-toggler.open span{
     flex: 0 0 60%;
     max-width: 60%;
 }
+.home .home-info h4 i{
+    color: red;
+}
 h3.hello{
     font-size: 28px;
     margin: 15px 0;
