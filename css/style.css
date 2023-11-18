@@ -297,7 +297,8 @@ aside .nav-toggler.open span{
     max-width: 60%;
 }
 .home .home-info h4 i{
-    color: red;
+    color: blueviolet;
+    text-decoration: line-through;
 }
 h3.hello{
     font-size: 28px;
