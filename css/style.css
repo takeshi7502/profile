@@ -282,6 +282,11 @@ aside .nav-toggler.open span{
 .aside .nav li a i{
     margin-right: 15px;
 }
+.aside ul li a img{
+    width: 24px;
+    height: 20px;
+    margin-right:10px;
+}
 .home{
     min-height: 100vh;
     display: flex;
