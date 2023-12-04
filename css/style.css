@@ -18,6 +18,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+    overflow: hidden;
 }
 *{
     margin: 0;
@@ -365,7 +366,6 @@ h3.my-profession{
 .about .about-content{
     flex: 0 0 100%;
     max-width: 100%;
-
 }
 .about .about-content .about-text{
     flex: 0 0 100%;
@@ -655,7 +655,9 @@ h3.my-profession{
     z-index: 1;
     /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
 } */
-  
+.contact{
+    overflow: hidden;
+}
 .contact-title{
     color: var(--skin-color);
     text-align: center;
