@@ -140,9 +140,11 @@ ul{
     position: relative;
 }
 .btn{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    padding: 12px 35px;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    margin-right: 5px;
     color: white;
     border-radius: 40px;
     display: inline-block;
@@ -326,7 +328,7 @@ h3.my-profession{
 .home-info p{
     margin-top: 15px;
     margin-bottom: 70px;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--text-black-700);
 }
 
@@ -418,6 +420,10 @@ h3.my-profession{
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
+}
+.about .about-content .skills .row{
+    justify-content: center;
+    font-size: 15px;
 }
 .about .about-content .skills .skill-item{
     flex: 0 0 100%;
