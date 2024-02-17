@@ -661,9 +661,9 @@ h3.my-profession{
     z-index: 1;
     /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
 } */
-.contact{
-    /* overflow: hidden; */
-}
+/* .contact{
+    overflow: hidden;
+} */
 .contact-title{
     color: var(--skin-color);
     text-align: center;
