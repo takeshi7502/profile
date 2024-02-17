@@ -662,7 +662,7 @@ h3.my-profession{
     /* Các thuộc tính CSS khác để tùy chỉnh vị trí và giao diện của tooltip.
 } */
 .contact{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .contact-title{
     color: var(--skin-color);
